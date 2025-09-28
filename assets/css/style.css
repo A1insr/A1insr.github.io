@@ -10,10 +10,9 @@
 --------------------------------------------------------------*/
 
 
-
 body {
   font-family: "Open Sans", sans-serif;
-  background-color: #040404;
+  background-color: #0f172a; /* dark navy base */
   color: #fff;
   position: relative;
   background: transparent;
@@ -22,12 +21,11 @@ body {
 body::before {
   content: "";
   position: fixed;
-  background: radial-gradient(circle at 20% 30%, rgba(56,189,248,0.35), transparent 70%),
-              radial-gradient(circle at 80% 70%, rgba(243, 149, 82, 0.35), transparent 70%),
-              radial-gradient(circle at 50% 100%, rgba(236,72,153,0.25), transparent 70%),
-              #0b1220;
+  background: radial-gradient(circle at 20% 30%, rgba(34,211,238,0.35), transparent 70%), /* teal */
+              radial-gradient(circle at 80% 70%, rgba(129,140,248,0.35), transparent 70%), /* indigo */
+              radial-gradient(circle at 50% 100%, rgba(59,130,246,0.25), transparent 70%), /* blue */
+              #0f172a; /* navy base */
   color: #f1f5f9;
-
 
   background-size: 400% 400%;
   animation: gradientBG 15s ease infinite;
@@ -37,13 +35,15 @@ body::before {
   height: 100%;
   z-index: -1;
 }
+
 .site-hero {
   position: relative;
-  background:  radial-gradient(circle at 20% 30%, rgba(56,189,248,0.35), transparent 70%),
-              radial-gradient(circle at 80% 70%, rgba(249,115,22,0.35), transparent 70%),
-              radial-gradient(circle at 50% 100%, rgba(236,72,153,0.25), transparent 70%),
-              #0b1220;
+  background: radial-gradient(circle at 20% 30%, rgba(34,211,238,0.35), transparent 70%), /* teal */
+              radial-gradient(circle at 80% 70%, rgba(129,140,248,0.35), transparent 70%), /* indigo */
+              radial-gradient(circle at 50% 100%, rgba(59,130,246,0.25), transparent 70%), /* blue */
+              #0f172a; /* navy base */
 }
+
 @media (min-width: 1024px) {
   body::before {
     background-attachment: fixed;
